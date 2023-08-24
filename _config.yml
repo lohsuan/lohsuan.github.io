@@ -3,7 +3,7 @@ subtitle: ''
 description: ''
 keywords: null
 author: Yu-Hsuan (Erin)
-language: zh
+language: zh-TW # zh-tw
 timezone: 'Asia/Taipei'
 url: https://lohsuan.github.io
 permalink: ':year/:month/:day/:title/'

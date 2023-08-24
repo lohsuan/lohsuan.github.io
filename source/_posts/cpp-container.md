@@ -1,10 +1,20 @@
 ---
 title: C++ Container 整理
 date: 2023-08-23 16:15:22
-tags: cpp-container
+catogories:
+  - cpp
+tags:
+  - cpp-container
+toc: true
+cover: /gallery/covers/cpp-containers.png
+thumbnail: /gallery/covers/cpp-containers.png
 ---
 
-## 1. `vector` vs `list`
+這篇文章整理了常見 C++ 容器的比較，包括 `vector` vs `list`、`map` vs `unordered_map`、`set` vs `map`，並補充了 C++11 更新的容器 `array` 和 `forward_list`。
+
+<!-- more -->
+
+## `vector` vs `list`
 
 - `vector` 封裝了 **array list**
 - `list` 封裝了 **doubly linked list**
@@ -19,7 +29,9 @@ p.s. single linked list 的新增刪除還是 O(N)，因爲少 forward pointer�
 
 結論：常需要隨機訪問用 `vector`、常需要新增刪除中間數據用 `list`
 
-## 2. `map` vs `unordered_map`
+---
+
+## `map` vs `unordered_map`
 
 - 存放 key-value pairs 的映射資料結構
 - `map` 封裝了**紅黑樹**， Self balancing Binary Search Tree (BST)
@@ -33,7 +45,9 @@ p.s. single linked list 的新增刪除還是 O(N)，因爲少 forward pointer�
 
 結論：需要鍵值排序用 `map`，需要搜尋資料、插入刪除用 `unordered_map`
 
-## 3. `set` vs `map`
+---
+
+## `set` vs `map`
 
 - `set` 只存 key，`map` 則是存 key value pairs
 - 都是紅黑樹 (Self-Balancing BST)
@@ -41,12 +55,16 @@ p.s. single linked list 的新增刪除還是 O(N)，因爲少 forward pointer�
 - `unordered_set/unordered_map` 內部實作是 hash table [C++11]
 - `multiset/multimap`可擁有多個相同鍵值的 [C++11]
 
-## 4. `set` vs `vector`
+---
+
+## `set` vs `vector`
 
 - set 不允許重複數據
 
 ---
-## 補充
+
+## 補充 array & forward_list
+
 ### [C++11] `std::array`
 
 - 在編譯階段就決定好大小，事後不能修改
