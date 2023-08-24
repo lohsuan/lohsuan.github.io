@@ -1,7 +1,7 @@
 ---
 title: C++ Container 整理
 date: 2023-08-23 16:15:22
-catogories:
+categories:
   - cpp
 tags:
   - cpp-container
